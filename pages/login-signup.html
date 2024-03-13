@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>e-Commerce de la Nonna</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                
+                <li><a href="">Productos</a></li>
+                
+                <li><a href="">Ubicación</a></li>
+                
+                <li><a href="./pages/login-signup.html">Registrarme</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>Log-In</legend>
+            <form 
+                action=""
+                method="get"
+            >   
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <br>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="Correo eletrónico"
+                    >
+                </div>
+
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <br>
+                    <input 
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Contraseña"
+                    >
+                </div>
+
+                <hr>
+
+                <button 
+                    type="submit"
+                >
+                    Log-In my user
+                </button>
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sign-Up</legend>
+
+            <form 
+                action=""
+                method="get"
+            >   
+                <div>
+                    <label for="email">Usuario:</label>
+                    <br>
+                    <input 
+                        type="user" 
+                        name="user" 
+                        id="user"
+                        placeholder="Nombre de usuario"
+                    >
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <br>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="Correo eletrónico"
+                        required
+                    >
+                </div>
+
+
+                <div>
+                    <fieldset>
+                        <legend>Seleccione su género.</legend>
+                        <div>
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" name="genero" id="masculino" value="masculino" checked>
+                        </div>
+                        <div>
+                            <label for="femenino">Femenino</label>
+                            <input type="radio" name="genero" id="femenino" value="femenino">
+                        </div>
+                        <div>
+                            <label for="masculino">No binario</label>
+                            <input type="radio" name="genero" id="nobinary" value="nobinary">
+                        </div>                                                
+                    </fieldset>
+                </div>
+                <div>
+                    <label for="fecha">Fecha de suscripción</label>
+                    <input type="datetime-local" name="fecha" id="fecha" aria-valuenow="">
+                    <small>La fecha es la actual es por defecto</small>
+                </div>
+
+                <div>
+                    <p>Elija su color favorito de comida:</p>
+
+                    <div>
+                    <input type="color" id="preferencia_1" name="preferencia_1" value="#e66465" />
+                    <label for="preferencia_1">Color 1</label>
+                    </div>
+                    
+                    <div>
+                    <input type="color" id="preferencia_2" name="preferencia_2" value="#f6b73c" />
+                    <label for="preferencia_2">Color 2</label>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Tus intereses:</legend>
+                  
+                    <div>
+                      <input type="checkbox" id="coding" name="interests" value="coding" />
+                      <label for="coding">Programar</label>
+                    </div>
+                  
+                    <div>
+                      <input type="checkbox" id="music" name="interests" value="music"/>
+                      <label for="music">Música</label>
+                    </div>
+                </fieldset>
+                  
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <br>
+                    <input 
+                        type="password"
+                        name="password_1"
+                        id="password"
+                        placeholder="Contraseña"
+                    >
+                </div>
+
+                <div>
+                    <label for="password">Validar contraseña:</label>
+                    <br>
+                    <input 
+                        type="password"
+                        name="password_2"
+                        id="password"
+                        placeholder="Repetir contraseña"
+                    >
+                </div>
+
+                <hr>
+
+                <div>
+                    <input type="checkbox" name="condiciones" id="condiciones" required>
+                    <label for="condiciones">Aceptar condiciones.</label>
+                </div>
+
+                <button 
+                    type="submit"
+                >
+                    Log-In my user
+                </button>
+                <button 
+                    type="reset"
+                >
+                    Borrar datos ingresados
+                </button>                
+            </form>            
+        </fieldset>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
